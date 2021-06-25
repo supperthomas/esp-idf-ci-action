@@ -1,6 +1,8 @@
 # esp-idf-ci-action
 
-GitHub Action for ESP32 CI
+GitHub Action for ESP32 CI with Rust language support.
+
+The image in this action is based on ESP-IDF base image with Rust language layer.
 
 ## Usage
 
@@ -18,9 +20,7 @@ jobs:
       with:
         submodules: 'recursive'
     - name: esp-idf build
-      uses: espressif/esp-idf-ci-action@latest
-      with:
-        path: 'esp32-s2-hmi-devkit-1/examples/smart-panel'
+      uses: espressif/esp-idf-ci-action@rust-latest
 ```
 
 ## How to specify a custom version of ESP-IDF

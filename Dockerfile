@@ -1,4 +1,4 @@
-FROM espressif/idf:latest
+FROM georgikrocks/esp-idf-rust:latest
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
