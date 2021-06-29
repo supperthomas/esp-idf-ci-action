@@ -18,7 +18,7 @@ jobs:
       with:
         submodules: 'recursive'
     - name: esp-idf build
-      uses: espressif/esp-idf-ci-action@v4.2.1
+      uses: espressif/esp-idf-ci-action@v4.3
       with:
         path: 'esp32-s2-hmi-devkit-1/examples/smart-panel'
 ```
